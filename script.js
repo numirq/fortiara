@@ -58,9 +58,10 @@ function generateMessage(noCount) {
 
 function changeImage(image) {
   const extension = image === "yes" ? ".gif" : ".png";
-  catImg.src = `/cat${image}${extension}`;
+  catImg.src = `cat${image}${extension}`;
 }
 
 function updateNoButtonText() {
   noButton.innerHTML = generateMessage(noCount);
 }
+
